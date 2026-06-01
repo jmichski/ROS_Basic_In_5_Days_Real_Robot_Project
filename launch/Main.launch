@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <!-- ======== ARGUMENTS ======== -->
+    <arg name="turn_type" default="0"/>
+
+    <!-- ======== find_wall service node ======== -->
+    <node pkg="find_wall"
+        type="srv_find_wall.py"
+        name="find_wall_svc"
+        output="screen">
+    </node>
+
+    <!-- ======== log lap action server node ======== -->
+    <node pkg="log_robot_lap"
+            type="log_robot_lap_ac_server.py"
+            name="log_robot_lap_server_node"
+            output="screen">
+        <param name="turn_type" value="$(arg turn_type)"/>
+    </node>
+   
+    <!-- ======== log lap action client node ======== -->
+    <node pkg="log_robot_lap"
+            type="log_robot_lap_ac_client.py"
+            name="log_robot_lap_client_node"
+            output="screen">
+        <param name="turn_type" value="$(arg turn_type)"/>
+    </node>
+</launch>
