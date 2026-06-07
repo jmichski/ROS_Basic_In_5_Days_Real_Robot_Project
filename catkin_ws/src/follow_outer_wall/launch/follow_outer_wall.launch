@@ -1,0 +1,7 @@
+<launch>
+  <!-- Follow Outer Wall Launch -->
+  <node pkg="follow_outer_wall" type="cmd_follow_outer_wall.py" name="pkg_follow_outerwall"  output="screen">
+    <param name="turn_type" value="0"/>
+  </node> 
+  <node pkg="find_wall" type="srv_find_wall.py" name="find_wall_svc" output="screen"/>
+</launch>

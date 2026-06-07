@@ -1,0 +1,9 @@
+<launch>
+  <!-- Follow Outer Wall Launch -->
+  <arg name="turn_type" default="0"/>
+  <node pkg="follow_outer_wall_action_server" type="srv_follow_outer_wall.py" name="pkg_follow_outerwall"  output="screen">
+    <param name="turn_type" value="0"/>
+  </node> 
+  <node pkg="find_wall" type="srv_find_wall.py" name="find_wall_svc" output="screen"/>
+  <node pkg="record_odom" type="act_record_odom.py" name="record_odom_action" output="screen"/>
+</launch>

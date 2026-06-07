@@ -1,0 +1,9 @@
+# Goal
+float32 target_distance
+---
+# Result
+float32 total_distance
+---
+# Feedback
+float32 current_distance
+float32 distance_remaining

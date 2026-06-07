@@ -1,0 +1,6 @@
+catkin_ws/build/
+catkin_ws/build 1/
+catkin_ws/devel/
+*.pyc
+__pycache__/
+*.bag
