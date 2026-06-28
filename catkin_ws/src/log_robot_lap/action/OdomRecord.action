@@ -1,0 +1,7 @@
+# Goal — empty, just trigger the lap
+---
+# Result — full list of odometry positions recorded during lap
+geometry_msgs/Point32[] list_of_odoms
+---
+# Feedback — running total distance during lap
+float32 current_total

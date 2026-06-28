@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+!/usr/bin/env python3
 
 import rospy
 import math
@@ -7,7 +7,7 @@ from geometry_msgs.msg import Twist
 from sensor_msgs.msg import LaserScan
 from std_msgs.msg import Float32, UInt32
 
-FORWARD_INDEX             = 360 
+FORWARD_INDEX             = 360 #
 RIGHT_INDEX               = 180
 FORWARD_DISTANCE          = 0.3
 FORWARD_SPEED             = 0.15
